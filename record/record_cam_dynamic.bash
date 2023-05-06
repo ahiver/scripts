@@ -6,8 +6,6 @@ then
       exit 0
 fi
 
-source ../env/setup.bash
-
 EXPERIMENT_NAME=$1
 BAG_DIR=$BAGS_DIR/$EXPERIMENT_NAME
 BAG_NAME=cam_dynamic.bag

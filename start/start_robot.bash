@@ -1,10 +1,9 @@
 #!/bin/bash
-source ../env/setup.bash
 
 # Start camera ROS node
-pushd $USB_CAM_DIR
+pushd $USB_CAM_DIR > /dev/null
 source devel/setup.bash
-popd
+popd > /dev/null
 
 roslaunch usb_cam usb_cam-test.launch
 

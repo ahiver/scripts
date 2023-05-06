@@ -1,7 +1,5 @@
 #!/bin/bash
 
-source ../env/setup.bash
-
 if [ -z "$1" ]
 then
       echo "Experiment name is not defined."
@@ -25,8 +23,8 @@ fi
 
 mkdir -p ${OUTPUT_DIR}
 source $ALLAN_VARIANCE_DIR/devel/setup.bash
-pushd $OUTPUT_DIR
+pushd $OUTPUT_DIR > /dev/null
 rosrun allan_variance_ros cookbag.py --input ${BAG_PATH} --output ${COOKED_BAG_PATH}
 rosrun allan_variance_ros allan_variance . ${ALLAN_CONFIG_PATH}
 rosrun allan_variance_ros analysis.py --data allan_variance.csv --config ${ALLAN_CONFIG_PATH}
-popd
+popd > /dev/null

@@ -1,7 +1,5 @@
 #!/bin/bash
 
-source ../env/setup.bash
-
 if [ -z "$1" ]
 then
       echo "Experiment name is not defined."
@@ -36,7 +34,7 @@ echo Camera Model: ${CAMERA_MODEL}
 echo state. Press Ctrl+C to finish.
 mkdir -p $OUTPUT_DIR
 source $KALIBR_DIR/devel/setup.bash
-pushd $OUTPUT_DIR
+pushd $OUTPUT_DIR > /dev/null
 rosrun kalibr kalibr_calibrate_imu_camera --target $CALIBRATION_TARGET_PATH --imu $IMU_CALIBRATION_PATH --imu-models calibrated --cam $CAM_CALIBRATION_PATH --bag $BAG_PATH
 echo Output path: ${OUTPUT_DIR}
-popd
+popd > /dev/null

@@ -1,8 +1,19 @@
-# bees
-
-Update WORKSPACE_DIR in scripts/env/setup.bash to point directory bees was cloned to
 
 # Setup Robot
+
+## Preparation
+
+Create workspace directory 
+
+Inside workspace directory:
+
+`git clone https://github.com/ahiver/scripts.git`
+
+Update WORKSPACE_DIR in env.bash
+
+add source <path to env.bash> to ~/.bashrc
+
+`chmode +x env.bash`
 
 ## Install projects and dependencies
 
@@ -45,6 +56,16 @@ TODO
 `scripts/record/record*.bash`
 
 # Setup Developer Host Machine
+
+## Preparation
+
+Create workspace directory 
+
+Inside workspace directory:
+
+git clone https://github.com/ahiver/scripts.git
+
+Update WORKSPACE_DIR in env.bash
 
 ## Install projects and dependencies
 

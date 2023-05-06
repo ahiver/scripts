@@ -1,11 +1,13 @@
 #!/bin/bash
 
-export WORKSPACE_DIR=~/workspace/bees
+# TODO update WORKSPACE_DIR to actual location! 
+export WORKSPACE_DIR=~/bees
 
 
 export SCRIPTS_DIR=$WORKSPACE_DIR/scripts
 export PROJECTS_DIR=$WORKSPACE_DIR/projects
 export CONFIGS_DIR=$WORKSPACE_DIR/configs
+export DOCS_DIR=$WORKSPACE_DIR/docs
 export TMP_DIR=$WORKSPACE_DIR/tmp
 
 export BAGS_DIR=$WORKSPACE_DIR/bags
@@ -13,7 +15,7 @@ export CALIBRATIONS_DIR=$WORKSPACE_DIR/calibrations
 
 export KALIBR_DIR=$PROJECTS_DIR/kalibr_ws
 export ALLAN_VARIANCE_DIR=$PROJECTS_DIR/allan_variance_ws
-export OPEN_VINS_DIR=$PROJECTS_DIR/bee_vins_ws
+export OPEN_VINS_DIR=$PROJECTS_DIR/vins_ws
 export USB_CAM_DIR=$PROJECTS_DIR/usb_cam_ws
 export CERES_DIR=$PROJECTS_DIR/ceres_ws
 

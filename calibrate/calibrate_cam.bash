@@ -1,7 +1,5 @@
 #!/bin/bash
 
-source ../env/setup.bash
-
 if [ -z "$1" ]
 then
       echo "Experiment name is not defined."
@@ -23,7 +21,7 @@ OUTPUT_DIR=$CALIBRATIONS_DIR/${EXPERIMENT_NAME}/cam
 echo Press Ctrl+C to finish.
 mkdir -p $OUTPUT_DIR
 source $KALIBR_DIR/devel/setup.bash
-pushd $OUTPUT_DIR
+pushd $OUTPUT_DIR > /dev/null
 rosrun kalibr kalibr_calibrate_cameras --target ${CALIBRATION_TARGET_PATH} --models ${CAMERA_MODEL} --topics ${CAMERA_TOPIC} --bag $BAG_PATH --bag-freq $BAG_FREQ
 echo Output path: ${OUTPUT_DIR}
-popd
+popd > /dev/null
