@@ -3,22 +3,28 @@
 
 ## Preparation
 
-Create workspace directory 
+Create workspace directory (by default ~/bees)
 
 Inside workspace directory:
 
 `git clone https://github.com/ahiver/scripts.git`
 
-Update WORKSPACE_DIR in env.bash
-
-add source <path to env.bash> to ~/.bashrc
+add `source <path to env.bash>` to ~/.bashrc
 
 `chmode +x env.bash`
 
+## Update env variables
+
+Update variables in env.bash in correspondance to your setup
+
+Update path to env.bass in start/start_robot.bash
+
+Update path to env.bass in start/robot.service
+
 ## Install projects and dependencies
 
-`chmod +x install_robot.bash`
-`scripts/install_robot.bash`
+`chmod +x robot_install.bash`
+`scripts/robot_install.bash`
 
 ## Install additional useful apps
 
@@ -40,11 +46,16 @@ Check video0 device appeared after reboot:
 
 in case we use robot as ROS master
 
-`scripts/start/start_master_robot.bash`
+`scripts/start/start_robot.bash --master`
 
 otherwise 
 
 `scripts/start/start_robot.bash`
+
+## Start ROS Nodes on os load
+
+Execute script to launch necessary nodes on load automatically
+`scripts/start/robot_start_on_load.bash`
 
 ## Start Estimating device pose using Visual Odometry
 
@@ -59,18 +70,37 @@ TODO
 
 ## Preparation
 
-Create workspace directory 
+Create workspace directory (by default ~/bees)
 
 Inside workspace directory:
 
-git clone https://github.com/ahiver/scripts.git
+`git clone https://github.com/ahiver/scripts.git`
 
-Update WORKSPACE_DIR in env.bash
+add `source <path to env.bash>` to ~/.bashrc
+
+`chmode +x env.bash`
+
+## Update env variables
+
+Update variables in env.bash in correspondance to your setup
+
+Update path to env.bash in start/start_host.bash
+
+Update path to env.bash in start/host.service
 
 ## Install projects and dependencies
 
-`chmod +x install_host.bash`
-`scripts/install_host.bash`
+`chmod +x host_install.bash`
+`scripts/host_install.bash`
+
+## Fix wifi if macbook used as developer host
+
+Add to /etc/init/host.conf
+wlp2s0 stands for wifi link. It may be different on your machine.
+
+`start on startup`
+`task`
+`iwconfig wlp2s0 txpower 10dBm`
 
 ## Install additional useful apps
 
@@ -78,13 +108,18 @@ Update WORKSPACE_DIR in env.bash
 
 ## Start ROS Nodes 
 
-in case we use host as ROS master
+in case we use robot as ROS master
 
-`scripts/start/start_host_robot.bash`
+`scripts/start/start_host.bash --master`
 
 otherwise 
 
 `scripts/start/start_host.bash`
+
+## Start ROS Nodes on os load
+
+Execute script to launch necessary nodes on load automatically
+`scripts/start/host_start_on_load.bash`
 
 ## Sensors Calibration
 

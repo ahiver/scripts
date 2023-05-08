@@ -1,0 +1,9 @@
+[Unit]
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/home/astrib/bees/scripts/start/start_host.bash
+
+[Install]
+WantedBy=default.target

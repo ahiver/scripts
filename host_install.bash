@@ -1,5 +1,7 @@
 #!/bin/bash
 
+source ./env.bash
+
 pushd $SCRIPTS_DIR > /dev/null
 
 # make bash scripts executable

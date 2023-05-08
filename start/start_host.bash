@@ -1,8 +1,19 @@
 #!/bin/bash
 
-ip a
+# TODO: update path to yours
+source /home/astrib/bees/scripts/env.bash
 
-echo Make sure that wifi link is wlp2s0
+MASTER_IP=$ROS_MASTER_IP
+if [ $ROS_MASTER_IP == $HOST_IP ]
+then
+    MASTER_IP="127.0.0.1"
+fi
 
-# This is need for Ubuntu on Macbook 
-sudo iwconfig wlp2s0 txpower 10dBm
+export ROS_MASTER_URI=http://${MASTER_IP}:11311
+export ROS_IP=$HOST_IP
+export ROS_HOSTNAME=$HOST_NAME
+
+if [ $ROS_MASTER_IP == $HOST_IP ]
+then
+    roscore
+fi

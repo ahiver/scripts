@@ -1,6 +1,8 @@
 #!/bin/bash
 
-pushd $SCRIPTS_DIR
+source ./env.bash
+
+pushd $SCRIPTS_DIR > /dev/null
 
 # make bash scripts executable
 find . -type f -name *.bash -print0 | xargs -0 chmod +x

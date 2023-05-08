@@ -1,9 +1,21 @@
 #!/bin/bash
 
-# TODO update WORKSPACE_DIR to actual location! 
-export WORKSPACE_DIR=~/bees
+source /opt/ros/noetic/setup.bash
 
+# Update these variables to correspond to your system setup 
+export WORKSPACE_NAME=bees
+export WORKSPACE_DIR=~/${WORKSPACE_NAME}
 
+export ROS_MASTER_IP=192.168.1.9
+
+export HOST_IP=192.168.1.9
+export HOST_NAME=uNest
+
+export ROBOT_IP=192.168.1.6
+export ROBOT_NAME=bee
+# End of variables to update
+
+# These parameters may be used as is
 export SCRIPTS_DIR=$WORKSPACE_DIR/scripts
 export PROJECTS_DIR=$WORKSPACE_DIR/projects
 export CONFIGS_DIR=$WORKSPACE_DIR/configs
