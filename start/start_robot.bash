@@ -1,6 +1,6 @@
 #!/bin/bash
 
-source /home/astrib/bees/scripts/env.bash
+source /home/bee/bees/scripts/env.bash
 
 MASTER_IP=$ROS_MASTER_IP
 if [ $ROS_MASTER_IP == $ROBOT_IP ]
