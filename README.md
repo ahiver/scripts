@@ -26,6 +26,8 @@ Update path to env.bass in start/robot.service
 `chmod +x robot_install.bash`
 `scripts/robot_install.bash`
 
+select ROS-Base
+
 ## Install additional useful apps
 
 `scripts/install/install_host_utils.bash`
@@ -92,6 +94,8 @@ Update path to env.bash in start/host.service
 
 `chmod +x host_install.bash`
 `scripts/host_install.bash`
+
+select Desktop-Full Install
 
 ## Fix wifi if macbook used as developer host
 

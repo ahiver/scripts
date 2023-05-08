@@ -3,7 +3,7 @@ After=network.target
 
 [Service]
 Type=simple
-ExecStart=/home/astrib/bees/scripts/start/start_robot.bash
+ExecStart=/home/hiver/bees/scripts/start/start_robot.bash
 
 [Install]
 WantedBy=default.target
