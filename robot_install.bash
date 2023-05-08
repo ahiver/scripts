@@ -19,7 +19,7 @@ popd > /dev/null
 mkdir -p ${USB_CAM_DIR}/src
 
 pushd ${USB_CAM_DIR}/src > /dev/null
-git clone <https://github.com/ai-are-better-than-humans/usb_cam.git
+git clone <https://github.com/ahiver/usb_cam.git
 popd > /dev/null
 
 pushd ${USB_CAM_DIR} > /dev/null
