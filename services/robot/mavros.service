@@ -1,0 +1,10 @@
+[Unit]
+After=ros.service
+
+[Service]
+Type=simple
+User=hiver
+ExecStart=/home/hiver/bees/scripts/start/robot/start_mavros_node.bash
+
+[Install]
+WantedBy=default.target

@@ -1,0 +1,9 @@
+[Unit]
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/home/astrib/bees/scripts/start/host/fix_mac_wifi.bash
+
+[Install]
+WantedBy=default.target

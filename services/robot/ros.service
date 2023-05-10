@@ -3,7 +3,8 @@ After=network.target
 
 [Service]
 Type=simple
-ExecStart=/home/hiver/bees/scripts/start/start_robot.bash
+User=hiver
+ExecStart=/home/hiver/bees/scripts/start/robot/start_ros.bash
 
 [Install]
 WantedBy=default.target

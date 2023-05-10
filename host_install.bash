@@ -34,3 +34,9 @@ cd ${ALLAN_VARIANCE_DIR}
 rosdep install -y --from-paths src --ignore-src
 catkin_make
 popd > /dev/null
+
+# install services to start ros and ros nodes on ubuntu startup
+# Comment out if you prefer to run manually
+pushd ${SCRIPTS_DIR}/install > /dev/null
+./install_host_services.bash
+popd > /dev/null

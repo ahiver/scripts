@@ -19,11 +19,15 @@ popd > /dev/null
 mkdir -p ${USB_CAM_DIR}/src
 
 pushd ${USB_CAM_DIR}/src > /dev/null
-git clone <https://github.com/ahiver/usb_cam.git
+git clone https://github.com/ahiver/usb_cam.git
 popd > /dev/null
 
 pushd ${USB_CAM_DIR} > /dev/null
 rosdep install -y --from-paths src --ignore-src
 catkin_make
+popd > /dev/null
+
+pushd ${SCRIPTS_DIR}/install > /dev/null
+./install_robot_services.bash
 popd > /dev/null
 

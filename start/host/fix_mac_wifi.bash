@@ -7,4 +7,9 @@
 # echo Make sure that wifi link is wlp2s0
 
 # This is need for Ubuntu on Macbook 
-sudo iwconfig wlp2s0 txpower 10dBm
+# iwconfig wlp2s0 txpower 10dBm
+
+#!/bin/sh
+sleep 20
+iwconfig wlp2s0 txpower 10dBm
+exit 0
