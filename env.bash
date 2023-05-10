@@ -1,7 +1,5 @@
 #!/bin/bash
 
-source /opt/ros/noetic/setup.bash
-
 # Update these variables to correspond to your system setup 
 export WORKSPACE_NAME=bees
 export WORKSPACE_DIR=~/${WORKSPACE_NAME}

@@ -10,6 +10,7 @@ Inside workspace directory:
 `git clone https://github.com/ahiver/scripts.git`
 
 add `source <path to env.bash>` to ~/.bashrc
+add `source <path to robot.ros.env.bash>` to ~/.bashrc
 
 `chmode +x env.bash`
 
