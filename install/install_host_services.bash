@@ -1,7 +1,7 @@
 #!/bin/bash
 
 pushd ${SCRIPTS_DIR}/start/host > /dev/null
-sudo chmod 744 *.bash
+sudo chmod +x *.bash
 popd > /dev/null
 
 pushd ${SCRIPTS_DIR}/services/host > /dev/null
@@ -15,3 +15,4 @@ sudo systemctl daemon-reload
 sudo systemctl enable mac_wifi.service
 # start ROS
 systemctl --user enable ros.service
+

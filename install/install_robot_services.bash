@@ -1,7 +1,7 @@
 #!/bin/bash
 
 pushd ${SCRIPTS_DIR}/start/robot > /dev/null
-sudo chmod 744 *.bash
+sudo chmod +x *.bash
 popd > /dev/null
 
 pushd ${SCRIPTS_DIR}/services/robot > /dev/null
