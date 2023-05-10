@@ -3,7 +3,6 @@ After=network.target
 
 [Service]
 Type=simple
-User=hiver
 ExecStart=/home/hiver/bees/scripts/start/robot/start_ros.bash
 
 [Install]

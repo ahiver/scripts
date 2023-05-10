@@ -12,7 +12,7 @@ export ROS_MASTER_URI=http://${MASTER_IP}:11311
 export ROS_IP=$ROBOT_IP
 export ROS_HOSTNAME=$ROBOT_NAME
 
-if [ $ROS_MASTER_IP == $HOST_IP ]
+if [ $ROS_MASTER_IP == $ROBOT_IP ]
 then
     roscore
 fi
