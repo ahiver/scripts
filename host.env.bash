@@ -1,6 +1,5 @@
 #!/bin/bash
 
-source /opt/ros/noetic/setup.bash
 source /home/astrib/bees/scripts/env.bash
 
 MASTER_IP=$ROS_MASTER_IP

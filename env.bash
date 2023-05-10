@@ -1,5 +1,7 @@
 #!/bin/bash
 
+source /opt/ros/noetic/setup.bash
+
 # Update these variables to correspond to your system setup 
 export WORKSPACE_NAME=bees
 export WORKSPACE_DIR=~/${WORKSPACE_NAME}
@@ -32,7 +34,7 @@ export CERES_DIR=$PROJECTS_DIR/ceres_ws
 export CALIBRATION_TARGET_PATH=$CONFIGS_DIR/april.yaml
 
 export FCU_DEVICE=/dev/ttyACM0
-export FCU_BAUD_RATE=912600
+export FCU_BAUD_RATE=921600
 
 export CAMERA_MODEL=pinhole-radtan
 export CAMERA_TOPIC=/usb_cam/image_raw
