@@ -5,6 +5,7 @@ After=ros.service camera.service mavros.service
 Type=simple
 Environment="ENV_SCRIPT=/home/hiver/bees/scripts/robot.env.bash"
 ExecStart=/home/hiver/bees/scripts/start/robot/start_record.bash
+ExecStop=/home/hiver/bees/scripts/start/robot/stop_record.bash
 
 [Install]
 WantedBy=default.target

@@ -8,10 +8,15 @@ fi
 
 EXPERIMENT_NAME=$1
 BAG_DIR=$BAGS_DIR/$EXPERIMENT_NAME
+
+mkdir -p $BAG_DIR
+
+pushd ${BAG_DIR} > /dev/null
+
 BAG_NAME=imu.bag
 BAG_PATH=$BAG_DIR/$BAG_NAME
-echo Keep IMU in stationary state. Press Ctrl+C to finish.
-rosbag record --lz4 --output-name=$BAG_NAME $IMU_TOPIC
 echo Output path: ${BAG_PATH}
-mkdir -p $BAG_DIR
-mv $BAG_NAME $BAG_DIR
+echo Keep IMU in stationary state. Press Ctrl+C to finish.
+rosbag record --lz4 --output-name=$BAG_NAME $IMU_TOPIC __name:=bag_recording
+
+popd > /dev/null
