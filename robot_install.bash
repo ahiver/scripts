@@ -31,3 +31,5 @@ pushd ${SCRIPTS_DIR}/install > /dev/null
 ./install_robot_services.bash
 popd > /dev/null
 
+sudo timedatectl set-timezone Europe/Kyiv
+
