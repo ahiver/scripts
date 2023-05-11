@@ -1,0 +1,9 @@
+[Unit]
+After=ros.service camera.service mavros.service
+
+[Service]
+Type=simple
+ExecStart=/home/hiver/bees/scripts/start/robot/start_record.bash
+
+[Install]
+WantedBy=default.target

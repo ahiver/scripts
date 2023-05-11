@@ -10,7 +10,7 @@ EXPERIMENT_NAME=$1
 BAG_DIR=$BAGS_DIR/$EXPERIMENT_NAME
 BAG_NAME=cam_imu.bag
 BAG_PATH=$BAG_DIR/$BAG_NAME
-echo Move camera in all DoFs. Press Ctrl+C to finish.
+echo Press Ctrl+C to finish.
 rosbag record --lz4 --output-name=$BAG_NAME $CAMERA_TOPIC $IMU_TOPIC
 echo Output path: ${BAG_PATH}
 mkdir -p $BAG_DIR
