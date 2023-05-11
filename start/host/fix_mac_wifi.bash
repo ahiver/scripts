@@ -10,6 +10,6 @@
 # iwconfig wlp2s0 txpower 10dBm
 
 #!/bin/sh
-sleep 20
+sleep 5
 iwconfig wlp2s0 txpower 10dBm
 exit 0
