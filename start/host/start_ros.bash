@@ -1,7 +1,6 @@
 #!/bin/bash
 
-# TODO: update path to yours
-source /home/astrib/bees/scripts/host.env.bash
+source ${ENV_SCRIPT}
 
 if [ $ROS_MASTER_IP == $HOST_IP ]
 then

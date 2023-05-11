@@ -10,8 +10,8 @@ EXPERIMENT_NAME=$1
 BAG_DIR=$BAGS_DIR/$EXPERIMENT_NAME
 BAG_NAME=cam_imu.bag
 BAG_PATH=$BAG_DIR/$BAG_NAME
+echo Output path: ${BAG_PATH}
 echo Press Ctrl+C to finish.
 rosbag record --lz4 --output-name=$BAG_NAME $CAMERA_TOPIC $IMU_TOPIC
-echo Output path: ${BAG_PATH}
 mkdir -p $BAG_DIR
 mv $BAG_NAME $BAG_DIR

@@ -1,6 +1,8 @@
 #!/bin/bash
 
-source /home/astrib/bees/scripts/env.bash
+export WORKSPACE_DIR=/home/astrib/bees
+
+source ${WORKSPACE_DIR}/scripts/env.bash
 
 MASTER_IP=$ROS_MASTER_IP
 if [ $ROS_MASTER_IP == $HOST_IP ]

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-source ./env.bash
+source ./host.env.bash
 
 pushd $SCRIPTS_DIR > /dev/null
 

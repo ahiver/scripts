@@ -1,9 +1,9 @@
 #!/bin/bash
 
-source /home/hiver/bees/scripts/robot.env.bash
+source ${ENV_SCRIPT}
 
 # Setup camera ROS node env
-pushd /home/hiver/bees/projects/usb_cam_ws > /dev/null
+pushd ${USB_CAM_DIR} > /dev/null
 
 source devel/setup.bash
 

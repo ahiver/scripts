@@ -1,10 +1,11 @@
 #!/bin/bash
 
-source /opt/ros/noetic/setup.bash
+if [ -f "/opt/ros/noetic/setup.bash" ]
+then
+    source /opt/ros/noetic/setup.bash
+fi
 
 # Update these variables to correspond to your system setup 
-export WORKSPACE_NAME=bees
-export WORKSPACE_DIR=~/${WORKSPACE_NAME}
 
 export ROS_MASTER_IP=192.168.1.9
 

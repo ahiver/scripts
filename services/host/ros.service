@@ -3,6 +3,7 @@ After=network.target
 
 [Service]
 Type=simple
+Environment="ENV_SCRIPT=/home/astrib/bees/scripts/host.env.bash"
 ExecStart=/home/astrib/bees/scripts/start/host/start_ros.bash
 
 [Install]

@@ -3,6 +3,7 @@ After=network.target
 
 [Service]
 Type=simple
+Environment="ENV_SCRIPT=/home/hiver/bees/scripts/robot.env.bash"
 ExecStart=/home/hiver/bees/scripts/start/robot/start_ros.bash
 
 [Install]

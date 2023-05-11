@@ -9,29 +9,25 @@ Inside workspace directory:
 
 `git clone https://github.com/ahiver/scripts.git`
 
-add `source <path to env.bash>` to ~/.bashrc
-add `source <path to robot.ros.env.bash>` to ~/.bashrc
+add `source <path to robot.env.bash>` to ~/.bashrc
 
-`chmode +x env.bash`
+`chmode +x *.bash`
 
 ## Update env variables
 
-Update variables in env.bash in correspondance to your setup
+Update WORSPACE_DIR in robot.env.bash
 
-Update path to env.bass in start/start_robot.bash
-
-Update path to env.bass in start/robot.service
+Update path parameters in *.service files in services directory
 
 ## Install projects and dependencies
 
-`chmod +x robot_install.bash`
 `scripts/robot_install.bash`
 
 select ROS-Base
 
 ## Install additional useful apps
 
-`scripts/install/install_host_utils.bash`
+`scripts/install/install_robot_utils.bash`
 
 ## Add support of camera ov7982
 
@@ -45,20 +41,9 @@ Check video0 device appeared after reboot:
 
 `ls -l /dev/video*`
 
-## Start ROS Nodes 
+## ROS Nodes 
 
-in case we use robot as ROS master
-
-`scripts/start/start_robot.bash --master`
-
-otherwise 
-
-`scripts/start/start_robot.bash`
-
-## Start ROS Nodes on os load
-
-Execute script to launch necessary nodes on load automatically
-`scripts/start/robot_start_on_load.bash`
+mavros and camera ros nodes are started automatically using services on OS load
 
 ## Start Estimating device pose using Visual Odometry
 
@@ -79,21 +64,18 @@ Inside workspace directory:
 
 `git clone https://github.com/ahiver/scripts.git`
 
-add `source <path to env.bash>` to ~/.bashrc
+add `source <path to host.env.bash>` to ~/.bashrc
 
-`chmode +x env.bash`
+`chmode +x *.bash`
 
 ## Update env variables
 
-Update variables in env.bash in correspondance to your setup
+Update WORKSPACE_DIR in host.env.bash
 
-Update path to env.bash in start/start_host.bash
-
-Update path to env.bash in start/host.service
+Update path parameters in *.service files in services directory
 
 ## Install projects and dependencies
 
-`chmod +x host_install.bash`
 `scripts/host_install.bash`
 
 select Desktop-Full Install
@@ -151,37 +133,5 @@ TODO
 
 # Multi machine ROS setup examples
 
-## Host is master
-
-nano /etc/hosts
-
-127.0.0.1 uNest
-192.168.1.6 bee
-
-nano ~/.bashrc
-
-source /opt/ros/noetic/setup.bash
-export ROS_MASTER_URI=http://127.0.0.1:11311
-export ROS_IP=192.168.1.9
-export ROS_HOSTNAME=uNest
-
-source ~./bashrc
-
-## Robot is slave
-
-nano /etc/hosts
-
-127.0.0.1 bee
-192.168.1.9 uNest
-
-nano ~/.bashrc
-
-source /opt/ros/noetic/setup.bash
-export ROS_MASTER_URI=http://192.168.1.3:11311
-export ROS_IP=192.168.1.6
-export ROS_HOSTNAME=bee
-
-source ~./bashrc
-
-
-
+Update ROS_MASTER_IP, HOST_IP, HOST_NAME, ROBOT_IP, ROBOT_NAME
+in env.bash

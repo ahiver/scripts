@@ -1,6 +1,6 @@
 #!/bin/bash
 
-source /home/hiver/bees/scripts/robot.env.bash
+source ${ENV_SCRIPT}
 
 if [ $ROS_MASTER_IP == $ROBOT_IP ]
 then
