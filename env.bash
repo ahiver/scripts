@@ -38,6 +38,9 @@ export CALIBRATION_TARGET_PATH=$CONFIGS_DIR/april.yaml
 export FCU_DEVICE=/dev/ttyACM0
 export FCU_BAUD_RATE=921600
 
+export GPS_DEVICE=/dev/ttyUSB2
+export GPS_BAUD_RATE=115200
+
 export CAMERA_MODEL=pinhole-radtan
 export CAMERA_TOPIC=/usb_cam/image_raw
 export IMU_TOPIC=/mavros/imu/data_raw
