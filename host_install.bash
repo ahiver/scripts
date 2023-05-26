@@ -8,7 +8,7 @@ pushd $SCRIPTS_DIR > /dev/null
 find . -type f -name "*.bash" -print0 | xargs -0 chmod +x
 
 ./install/install_docs.bash
-#./install/install_ros.bash
+./install/install_ros_ubuntu.bash
 ./install/install_ros_plugins.bash
 ./install/install_vins.bash
 ./install/install_host_utils.bash
