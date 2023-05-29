@@ -6,15 +6,15 @@ pushd ${TMP_DIR} > /dev/null
 
 # MavRos from binaries. For Ubuntu
 # sudo apt-get install ros-noetic-mavros ros-noetic-mavros-extras
-# wget https://raw.githubusercontent.com/mavlink/mavros/master/mavros/scripts/install_geographiclib_datasets.sh
-# chmod a+x install_geographiclib_datasets.sh
-# ./install_geographiclib_datasets.sh
+wget https://raw.githubusercontent.com/mavlink/mavros/master/mavros/scripts/install_geographiclib_datasets.sh
+chmod a+x install_geographiclib_datasets.sh
+./install_geographiclib_datasets.sh
 
 # MavRos from sources. For Raspbian 
 # https://github.com/mavlink/mavros/blob/master/mavros/README.md#installation
 sudo apt update
-sudo apt-get install -y python-catkin-tools python-rosinstall-generator python-wstool -y
-
+sudo apt-get install -y python3-catkin-tools python-rosinstall-generator python-wstool -y
+sudo apt-get install python-rospkg
 # 1. Create the workspace: unneeded if you already has workspace
 mkdir -p ${MAVROS_DIR}/src
 cd ${MAVROS_DIR}
