@@ -1,6 +1,6 @@
 #!/bin/bash
 
-export WORKSPACE_DIR=/home/hiver/bees
+export WORKSPACE_DIR=/home/hiver/workspace/hive/workspace/hive
 
 source ${WORKSPACE_DIR}/scripts/env.bash
 

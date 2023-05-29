@@ -3,8 +3,8 @@ After=ros.service
 
 [Service]
 Type=simple
-Environment="ENV_SCRIPT=/home/hiver/bees/scripts/robot.env.bash"
-ExecStart=/home/hiver/bees/scripts/start/robot/start_mavros_node.bash
+Environment="ENV_SCRIPT=/home/hiver/workspace/hive/scripts/robot.env.bash"
+ExecStart=/home/hiver/workspace/hive/scripts/start/robot/start_mavros_node.bash
 
 [Install]
 WantedBy=default.target
