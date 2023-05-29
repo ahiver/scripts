@@ -8,7 +8,8 @@ pushd $SCRIPTS_DIR > /dev/null
 find . -type f -name *.bash -print0 | xargs -0 chmod +x
 
 ./install/install_ros_raspian.bash
-./install/install_mavros.bash
+# ./install/install_mavros_ubuntu.bash
+./install/install_mavros_raspbian.bash
 ./install/install_ros_plugins.bash
 ./install/install_vins.bash
 ./install/install_usb_cam.bash

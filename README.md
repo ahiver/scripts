@@ -9,9 +9,10 @@ Inside workspace directory:
 
 `git clone https://github.com/ahiver/scripts.git`
 
+`cd scripts`
 add `source <path to robot.env.bash>` to ~/.bashrc
 
-`chmode +x *.bash`
+`chmod +x *.bash`
 
 ## Update env variables
 
