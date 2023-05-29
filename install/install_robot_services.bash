@@ -13,6 +13,6 @@ sudo systemctl daemon-reload
 sudo systemctl enable ros.service
 sudo systemctl enable camera.service
 sudo systemctl enable mavros.service
-sudo systemctl enable gps.service
+# sudo systemctl enable gps.service
 sudo systemctl enable record.service
 
