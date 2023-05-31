@@ -1,6 +1,6 @@
 #!/bin/bash
 
-export WORKSPACE_DIR=/home/hiver/workspace/hive
+export WORKSPACE_DIR=/home/hiver/bees
 source ${WORKSPACE_DIR}/scripts/env.bash
 
 MASTER_IP=$ROS_MASTER_IP
