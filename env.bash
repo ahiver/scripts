@@ -7,12 +7,12 @@ fi
 
 # Update these variables to correspond to your system setup 
 
-export ROS_MASTER_IP=192.168.1.9
+export ROS_MASTER_IP=192.168.11.1
 
 export HOST_IP=192.168.1.9
 export HOST_NAME=uNest
 
-export ROBOT_IP=192.168.1.8
+export ROBOT_IP=192.168.11.1
 export ROBOT_NAME=bee
 # End of variables to update
 

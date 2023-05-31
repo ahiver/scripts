@@ -8,7 +8,7 @@ pushd $SCRIPTS_DIR > /dev/null
 find . -type f -name *.bash -print0 | xargs -0 chmod +x
 
 ./install/install_ros_raspian.bash
-# ./install/install_mavros_ubuntu.bash
+# TODO: mavros installation on Raspbian should be made from sources and has problems
 ./install/install_mavros_raspbian.bash
 ./install/install_ros_plugins.bash
 ./install/install_vins.bash
