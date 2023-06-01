@@ -46,6 +46,19 @@ Check video0 device appeared after reboot:
 
 mavros and camera ros nodes are started automatically using services on OS load
 
+# Syncronize FCU and MavRos on Robot
+https://ardupilot.org/dev/docs/ros-timesync.html
+
+Update ./opt/ros/noetic/share/mavros/launch/apm_config.yaml
+Normally it is set by default
+Ardupilot: BRD_RTC_TYPES = 2
+conn:
+  timesync_rate: 10.0
+  system_time_rate: 1.0
+
+time:
+  timesync_mode: MAVLINK
+
 ## Start Estimating device pose using Visual Odometry
 
 TODO
@@ -54,6 +67,7 @@ TODO
 ## Record rosbags with sensors data
 
 `scripts/record/record*.bash`
+
 
 # Setup Developer Host Machine
 

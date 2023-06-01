@@ -13,9 +13,10 @@ then
 fi
 
 EXPERIMENT_NAME=$1
-BAG_FREQ=$2
+BAG_FREQ=$2 # 10.0
 BAG_DIR=$BAGS_DIR/$EXPERIMENT_NAME
-BAG_NAME=cam_static.bag
+# BAG_NAME=cam_static.bag
+BAG_NAME=cam_imu.bag
 BAG_PATH=$BAG_DIR/$BAG_NAME
 OUTPUT_DIR=$CALIBRATIONS_DIR/${EXPERIMENT_NAME}/cam
 echo Press Ctrl+C to finish.

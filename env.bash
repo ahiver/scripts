@@ -7,9 +7,10 @@ fi
 
 # Update these variables to correspond to your system setup 
 
-export ROS_MASTER_IP=192.168.11.1
-
+# export ROS_MASTER_IP=192.168.11.1
+export ROS_MASTER_IP=192.168.1.9
 export HOST_IP=192.168.1.9
+#export HOST_IP=192.168.11.114
 export HOST_NAME=uNest
 
 export ROBOT_IP=192.168.11.1
@@ -46,5 +47,5 @@ export CAMERA_MODEL=pinhole-radtan
 export CAMERA_TOPIC=/usb_cam/image_raw
 export IMU_TOPIC=/mavros/imu/data_raw
 export GPS_TOPIC=/gps_data
-export VINS_DEVICE_CONFIG=bee
-export VINS_SIMULATION_CONFIG=bee_sym
+
+export VINS_CONFIG=bee1

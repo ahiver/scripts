@@ -11,9 +11,11 @@ echo Make sure update_rate and rostopic im imu.yaml are correct.
 EXPERIMENT_NAME=$1
 BAG_DIR=$BAGS_DIR/$EXPERIMENT_NAME
 BAG_NAME=cam_imu.bag
+# BAG_NAME=cam_imu.bag
 BAG_PATH=$BAG_DIR/$BAG_NAME
 EXPERIMENT_DIR=$CALIBRATIONS_DIR/${EXPERIMENT_NAME}
-CAM_CALIBRATION_PATH=$EXPERIMENT_DIR/cam/cam_static-camchain.yaml
+# CAM_CALIBRATION_PATH=$EXPERIMENT_DIR/cam/cam_static-camchain.yaml
+CAM_CALIBRATION_PATH=$EXPERIMENT_DIR/cam/cam_imu-camchain.yaml
 IMU_CALIBRATION_PATH=$EXPERIMENT_DIR/imu/imu.yaml
 OUTPUT_DIR=$EXPERIMENT_DIR/cam_imu
 
