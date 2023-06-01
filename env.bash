@@ -48,4 +48,4 @@ export CAMERA_TOPIC=/usb_cam/image_raw
 export IMU_TOPIC=/mavros/imu/data_raw
 export GPS_TOPIC=/gps_data
 
-export VINS_CONFIG=bee1
+export VINS_CONFIG=bee2
