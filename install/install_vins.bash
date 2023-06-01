@@ -3,7 +3,11 @@
 mkdir -p ${CERES_DIR}
 
 pushd ${CERES_DIR} > /dev/null
-# Ceres. Used by open_vins
+
+# Requried by Ceres
+sudo apt-get install -y libopenblas-dev
+
+# Ceres. Used by open_vins to solve linear equations
 git clone https://ceres-solver.googlesource.com/ceres-solver
 cd ceres-solver
 git checkout tags/2.0.0
