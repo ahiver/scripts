@@ -20,5 +20,6 @@ source ${WORKSPACE_DIR}/scripts/env.bash
 MASTER_IP=127.0.0.1 #192.168.11.1
 
 export ROS_MASTER_URI=http://${MASTER_IP}:11311
-export ROS_IP=192.168.11.1 #$ROBOT_IP
+# export ROS_IP=192.168.11.1 #$ROBOT_IP
+export ROS_IP=192.168.1.2 #$ROBOT_IP
 export ROS_HOSTNAME=bee #$ROBOT_NAME
