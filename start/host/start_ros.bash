@@ -1,8 +1,8 @@
 #!/bin/bash
 
-source ${ENV_SCRIPT}
+# source ${ENV_SCRIPT}
 
-if [ $ROS_MASTER_IP == $HOST_IP ]
-then
-    roscore
-fi
+# if [ $ROS_MASTER_IP == $HOST_IP ]
+# then
+#     roscore
+# fi
