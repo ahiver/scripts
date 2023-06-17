@@ -15,7 +15,8 @@ sudo apt install python3-pip
 # meson.build:1:0: ERROR: Meson version is 0.53.2 but project requires >= 0.55
 sudo pip3 install meson==0.55 --ignore-installed
 meson setup build .
-ninja -C build
+# ninja -C build
+sudo ninja -C build install
 
 # create a config file
 # sudo mkdir /etc/mavlink-router
