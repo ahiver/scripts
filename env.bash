@@ -35,5 +35,8 @@ export CAMERA_TOPIC=/usb_cam/image_raw
 export IMU_TOPIC=/mavros/imu/data_raw
 export GPS_TOPIC=/gps_data
 
+export MAVPROXY_PORT=14550
+
 # export VINS_CONFIG=bee2
 export VINS_CONFIG=bee5
+# export VINS_CONFIG=bee2+5

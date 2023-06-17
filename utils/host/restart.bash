@@ -13,4 +13,4 @@ rostopic list
 rostopic echo -n1 /usb_cam/image_raw
 rostopic echo -n1 mavros/imu/data_raw
  
-rviz -d ${OPEN_VINS_DIR}/src/vins/ov_msckf/launch/display.rviz
+rviz -d ${OPEN_VINS_DIR}/src/vins/ov_msckf/launch/display2.rviz
