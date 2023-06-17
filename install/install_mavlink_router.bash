@@ -4,7 +4,8 @@ mkdir -p ${MAVLINK_ROUTER_DIR}
 pushd ${MAVLINK_ROUTER_DIR} > /dev/null
 
 # download the source 
-git clone https://github.com/intel/mavlink-router.git
+git clone https://github.com/ahiver/mavlink-router
+# git clone https://github.com/intel/mavlink-router.git
 cd mavlink-router
 git submodule update --init --recursive
 sudo apt install git meson ninja-build pkg-config gcc g++ systemd
