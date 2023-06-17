@@ -1,10 +1,10 @@
 [Unit]
-After=ros.service mavproxy.service
+After=ros.service
 
 [Service]
 Type=simple
 Environment="ENV_SCRIPT=/home/hiver/bees/scripts/robot.env.bash"
-ExecStart=/home/hiver/bees/scripts/start/robot/start_mavros_node.bash
+ExecStart=/home/hiver/bees/scripts/start/robot/start_mavproxy.bash
 
 [Install]
 WantedBy=default.target

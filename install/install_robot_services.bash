@@ -10,6 +10,7 @@ sudo cp -rf *.service /etc/systemd/system
 popd > /dev/null
 
 sudo systemctl daemon-reload
+sudo systemctl enable mavproxy.service
 sudo systemctl enable ros.service
 sudo systemctl enable camera.service
 sudo systemctl enable mavros.service
