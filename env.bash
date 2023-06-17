@@ -21,6 +21,7 @@ export USB_CAM_DIR=$PROJECTS_DIR/usb_cam_ws
 export CERES_DIR=$PROJECTS_DIR/ceres_ws
 export GPS_DIR=$PROJECTS_DIR/gps_ws
 export MAVROS_DIR=$PROJECTS_DIR/mavros
+export MAVLINK_ROUTER_DIR=$PROJECTS_DIR/mavlink_router
 
 export CALIBRATION_TARGET_PATH=$CONFIGS_DIR/april.yaml
 
