@@ -1,5 +1,5 @@
 [Unit]
-After=ros.service mavlink_router.service
+After=ros.service mavproxy.service
 
 [Service]
 Type=simple
