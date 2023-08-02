@@ -18,5 +18,8 @@ find . -type f -name *.bash -print0 | xargs -0 chmod +x
 ./install/install_robot_services.bash
 popd > /dev/null
 
+# If you get a “permission denied” error message when connecting to serial devices, the user permissions may need to be changed:
+sudo usermod -a -G dialout hiver
+
 sudo timedatectl set-timezone Europe/Kyiv
 
