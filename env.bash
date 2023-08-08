@@ -25,7 +25,12 @@ export MAVLINK_ROUTER_DIR=$PROJECTS_DIR/mavlink_router
 
 export CALIBRATION_TARGET_PATH=$CONFIGS_DIR/april.yaml
 
-export FCU_DEVICE=/dev/ttyACM0
+# Connect using USB
+# export FCU_DEVICE=/dev/ttyACM0
+
+# Connect using uart 4 through GPIO
+export FCU_DEVICE=/dev/ttyAMA1
+
 export FCU_BAUD_RATE=921600
 
 export GPS_DEVICE=/dev/ttyUSB2
