@@ -4,7 +4,7 @@ After=mavros.service
 [Service]
 Type=simple
 Environment="ENV_SCRIPT=/home/hiver/bees/scripts/robot.env.bash"
-ExecStart=/home/hiver/bees/scripts/start/robot/set_imu_rate.bash
+ExecStart=/home/hiver/bees/scripts/start/robot/post_setup.bash
 
 [Install]
 WantedBy=default.target
