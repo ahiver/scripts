@@ -11,8 +11,8 @@ sleep 10
 
 # start vins
 
-pushd ${PROJECTS_DIR}/vins > /dev/null
+pushd ${SCRIPTS_DIR}/vins > /dev/null
 
-vins/start_vins.bash
+./vins/start_vins.bash
 
 popd > /dev/null
