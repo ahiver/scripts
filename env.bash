@@ -46,5 +46,6 @@ export MAVLINK_EXTERNAL_PORT2=14560
 export MAVLINK_INTERNAL_PORT=14540
 
 # export VINS_CONFIG=bee2
-export VINS_CONFIG=bee5
+# export VINS_CONFIG=bee5
+export VINS_CONFIG=bee_heavy2
 # export VINS_CONFIG=bee2+5
