@@ -2,7 +2,7 @@
 
 source ${ENV_SCRIPT}
 
-sleep 10
+sleep 15
 
 # set imu mavlink connection rate to 300 hz
 rosrun mavros mavsys rate --stream-id 1 300
