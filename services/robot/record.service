@@ -1,5 +1,5 @@
 [Unit]
-After=ros.service camera.service mavros.service gps.service
+After=ros.service camera.service mavros.service post_setup.service
 
 [Service]
 Type=simple
