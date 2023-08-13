@@ -13,6 +13,6 @@ sleep 10
 
 pushd ${SCRIPTS_DIR}/vins > /dev/null
 
-./vins/start_vins.bash
+./start_vins.bash
 
 popd > /dev/null
