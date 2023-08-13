@@ -1,5 +1,5 @@
 [Unit]
-After=ros.service mavproxy.service
+After=ros.service mavproxy2.service
 
 [Service]
 Type=simple
