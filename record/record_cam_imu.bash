@@ -16,6 +16,6 @@ BAG_NAME=cam_imu.bag
 BAG_PATH=$BAG_DIR/$BAG_NAME
 echo Output path: ${BAG_PATH}
 echo Press Ctrl+C to finish.
-rosbag record --lz4 --output-name=$BAG_NAME $CAMERA_TOPIC $IMU_TOPIC __name:=bag_recording
-
+# rosbag record --lz4 --output-name=$BAG_NAME $CAMERA_TOPIC $IMU_TOPIC __name:=bag_recording
+rosbag record --output-name=$BAG_NAME $CAMERA_TOPIC $IMU_TOPIC __name:=bag_recording
 popd > /dev/null
