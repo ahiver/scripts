@@ -31,7 +31,7 @@ export CALIBRATION_TARGET_PATH=$CONFIGS_DIR/april.yaml
 # Connect using uart 4 through GPIO
 export FCU_DEVICE=/dev/ttyAMA1
 
-export FCU_BAUD_RATE=115200 #921600
+export FCU_BAUD_RATE=921600 #921600
 
 export GPS_DEVICE=/dev/ttyUSB2
 export GPS_BAUD_RATE=115200

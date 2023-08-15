@@ -11,6 +11,4 @@ source ${ENV_SCRIPT}
 # # roslaunch usb_cam usb_cam-test.launch
 # popd > /dev/null
 
-roslaunch --wait video-stream-opencv camera.launch camera_name:=usb_cam
-
-
+roslaunch --wait video_stream_opencv camera.launch camera_name:=usb_cam
