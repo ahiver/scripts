@@ -2,7 +2,7 @@
 
 set -x
 
-source ../../robot.env.bash
+source ../robot.env.bash
  
 rostopic list
 
