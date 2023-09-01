@@ -16,3 +16,5 @@ uvcdynctrl --device=video0 --get=Exposure
 rosrun mavros mavsys rate --stream-id 1 300
 
 rostopic hz /mavros/imu/data_raw
+
+rosrun ov_msckf set_origin.py
