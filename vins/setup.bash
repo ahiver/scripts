@@ -21,4 +21,5 @@ pushd ${OPEN_VINS_DIR} > /dev/null
 source devel/setup.bash
 popd > /dev/null
 
-rosrun ov_msckf set_origin.py
+# Do not set origin here, it casuses interruption of sensor messages in mavros
+# rosrun ov_msckf set_origin.py
