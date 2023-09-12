@@ -10,6 +10,12 @@ sudo apt-get install inxi
 # sudo apt-get install minicom
 
 # Network utils
-sudo apt install iwconfig
-sudo apt install ip
-sudo apt install ifconfig
+# iwconfig 
+sudo apt install wireless-tools
+# sudo apt install ip
+
+# ifconfig 
+sudo apt install net-tools
+
+# Camera management
+sudo apt install uvcdynctrl
