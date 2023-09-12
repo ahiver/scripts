@@ -7,4 +7,9 @@ sudo apt-get install htop
 sudo apt-get install inxi
 
 # AT modem
-sudo apt-get install minicom
+# sudo apt-get install minicom
+
+# Network utils
+sudo apt install iwconfig
+sudo apt install ip
+sudo apt install ifconfig

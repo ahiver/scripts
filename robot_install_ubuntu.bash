@@ -13,9 +13,10 @@ find . -type f -name *.bash -print0 | xargs -0 chmod +x
 ./install/install_vins.bash
 ./install/install_usb_cam.bash
 ./install/install_opencv_cam.bash
-./install/install_gps.bash
+# ./install/install_gps.bash
 ./install/install_robot_utils.bash
 ./install/install_mavproxy.bash
+./install/install_mavlink_router.bash
 ./install/install_robot_services.bash
 popd > /dev/null
 
