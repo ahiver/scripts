@@ -1,4 +1,5 @@
 #!/bin/bash
+# Outdated!
 
 source ./robot.env.bash
 
