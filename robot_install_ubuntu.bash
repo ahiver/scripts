@@ -27,5 +27,5 @@ popd > /dev/null
 
 sudo usermod -a -G dialout hiver
 
-sudo timedatectl set-timezone Europe/Kyiv
+sudo timedatectl set-timezone Europe/Kiev
 
