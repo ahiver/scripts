@@ -2,6 +2,11 @@
 
 set -x
 
+# Switch off unattended updates
+sudo systemctl stop unattended-upgrades
+sudo systemctl disable unattended-upgrades
+sudo apt-get purge unattended-upgrades
+
 source ./robot.env.bash
 
 pushd $SCRIPTS_DIR > /dev/null
