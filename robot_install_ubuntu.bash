@@ -2,6 +2,7 @@
 
 set -x
 
+# commenting out because of Waiting for cache lock: Could not get lock /var/lib/dpkg/lock-frontend. It is held by process 2753 (unattended-upgr) issue
 # Switch off unattended updates
 # sudo systemctl stop unattended-upgrades
 # sudo systemctl disable unattended-upgrades
@@ -29,11 +30,12 @@ find . -type f -name *.bash -print0 | xargs -0 chmod +x
 ./install/install_mavproxy.bash
 ./install/install_mavlink_router.bash
 ./install/install_robot_services.bash
+./install/install_hardware.bash
 popd > /dev/null
+
 
 # If you get a “permission denied” error message when connecting to serial devices, the user permissions may need to be changed:
 
 sudo usermod -a -G dialout hiver
 
 sudo timedatectl set-timezone Europe/Kiev
-
