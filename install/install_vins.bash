@@ -25,5 +25,5 @@ pushd ${OPEN_VINS_DIR}/src > /dev/null
 git clone https://github.com/ahiver/vins.git
 cd ${OPEN_VINS_DIR}
 rosdep install -y --from-paths src --ignore-src
-catkin_make
+catkin_make -DCMAKE_BUILD_TYPE=Release
 popd > /dev/null

@@ -9,5 +9,5 @@ popd > /dev/null
 
 pushd ${USB_CAM_DIR} > /dev/null
 rosdep install -y --from-paths src --ignore-src
-catkin_make
+catkin_make -DCMAKE_BUILD_TYPE=Release
 popd > /dev/null
