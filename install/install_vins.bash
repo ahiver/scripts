@@ -11,7 +11,6 @@ sudo apt-get install -y libopenblas-dev
 git clone https://ceres-solver.googlesource.com/ceres-solver
 cd ceres-solver
 git checkout tags/2.0.0
-git checkout tags/${CERES_VERSION}
 mkdir build && cd build
 cmake ..
 make
