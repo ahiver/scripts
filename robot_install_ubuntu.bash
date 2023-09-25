@@ -30,7 +30,7 @@ find . -type f -name *.bash -print0 | xargs -0 chmod +x
 ./install/install_mavproxy.bash
 ./install/install_mavlink_router.bash
 ./install/install_robot_services.bash
-./install/install_hardware.bash
+# ./install/install_hardware.bash
 popd > /dev/null
 
 
