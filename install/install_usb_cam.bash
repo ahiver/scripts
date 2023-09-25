@@ -1,5 +1,7 @@
 #!/bin/bash
 
+sudo apt-get install ros-noetic-image-common
+
 # ROS Camera node for ov7251
 mkdir -p ${USB_CAM_DIR}/src
 
