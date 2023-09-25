@@ -1,5 +1,9 @@
 #!/bin/bash
 
+sudo apt-get install libgflags-dev
+sudo apt install libgoogle-glog-dev
+sudo apt-get install protobuf-compiler libprotobuf-dev
+
 mkdir -p ${CERES_DIR}
 
 pushd ${CERES_DIR} > /dev/null
