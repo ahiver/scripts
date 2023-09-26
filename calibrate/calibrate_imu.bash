@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# imu.bag is expected to be in bags/{experiment_name}/calibration
+# imu_allen.yaml is used from configs 
+
 if [ -z "$1" ]
 then
       echo "Experiment name is not defined."
@@ -7,7 +10,7 @@ then
 fi
 
 EXPERIMENT_NAME=$1
-BAG_DIR=$BAGS_DIR/$EXPERIMENT_NAME
+BAG_DIR=$BAGS_DIR/$EXPERIMENT_NAME/calibration
 BAG_NAME=imu.bag
 ALLAN_CONFIG_FILE=imu_allan.yaml
 ALLAN_CONFIG_PATH=$(pwd)/configs/${ALLAN_CONFIG_FILE}
