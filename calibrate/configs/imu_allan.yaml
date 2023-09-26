@@ -1,0 +1,4 @@
+imu_topic: "/mavros/imu/data_raw"
+imu_rate: 300
+measure_rate: 300 # Rate to which imu data is subsampled
+sequence_time: 57999 # 3 hours in seconds
