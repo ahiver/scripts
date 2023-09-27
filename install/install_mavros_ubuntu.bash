@@ -1,6 +1,7 @@
 #!/bin/bash
 
-# ROS
+sudo apt install python3-pip
+
 mkdir -p ${TMP_DIR}
 pushd ${TMP_DIR} > /dev/null
 
