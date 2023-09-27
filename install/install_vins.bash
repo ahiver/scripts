@@ -1,5 +1,7 @@
 #!/bin/bash
 
+sudo apt install python3-rosdep2
+
 sudo apt-get install libgflags-dev
 sudo apt install libgoogle-glog-dev
 sudo apt-get install protobuf-compiler libprotobuf-dev
