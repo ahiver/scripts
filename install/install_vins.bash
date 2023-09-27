@@ -17,7 +17,7 @@ cd ceres-solver
 git checkout tags/2.0.0
 mkdir build && cd build
 cmake ..
-make
+make -j4
 sudo make install
 popd > /dev/null
 
@@ -28,5 +28,5 @@ pushd ${OPEN_VINS_DIR}/src > /dev/null
 git clone https://github.com/ahiver/vins.git
 cd ${OPEN_VINS_DIR}
 rosdep install -y --from-paths src --ignore-src
-catkin_make -DCMAKE_BUILD_TYPE=Release
+catkin_make -j4 -DCMAKE_BUILD_TYPE=Release
 popd > /dev/null
