@@ -4,7 +4,9 @@ sudo apt-get install libgflags-dev
 sudo apt install libgoogle-glog-dev
 sudo apt-get install protobuf-compiler libprotobuf-dev
 
+// that line causes deinstall of some base ros packets, do this ahead of ros installation?
 sudo apt install python3-rosdep2
+
 sudo apt-get install ros-noetic-image-common
 sudo apt install v4l-utils
 sudo apt install libavcodec-dev
